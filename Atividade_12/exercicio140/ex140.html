@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <!-- 
+    Nome: Guiilherme Aparecido Rocha 
+    RA: 1550782121011
+    Data: 04/04/2023
+    Exercício número: Atividade_12
+    Questionário número: exercício 140
+        -->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercicío 140</title>
+    <script src="ex140.js"></script>
+    <style>
+      body {
+        font-family: 'Courier New', Courier, monospace;
+        align-items: center;
+        justify-content: center;
+        display: block;
+        background: #ffffff;
+      }
+    </style>
+  </head>
+  <body onresize="alert('Você redimensionou a página')">
+    <h1>Ultilizando Temporizador</h1>
+    <form>
+      Nome
+      <input
+        type="text"
+        name="txtNome"
+        id="txtNome"
+        onblur="verificarNome()"
+      /><br />
+      Idade
+      <input
+        type="text"
+        name="txtIdade"
+        id="txtIdade"
+        onblur="verificarIdade()"
+      /><br />
+      <input type="button" value="Desativar" onclick="desativaTemp()">
+    </form>
+    <p id="resultado"></p>
+  </body>
+</html>
